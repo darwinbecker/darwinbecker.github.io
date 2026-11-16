@@ -8,9 +8,9 @@ type ButtonLinkProps = ComponentProps<typeof Link> & {
 
 const variants = {
   primary:
-    "bg-foreground text-background hover:bg-accent-hover focus-visible:outline-offset-4",
+    "bg-accent text-[#131915] hover:bg-accent-hover focus-visible:outline-offset-4",
   secondary:
-    "border border-border bg-surface text-foreground hover:border-foreground/30 hover:bg-white",
+    "border border-border bg-surface text-foreground hover:border-accent/50 hover:bg-[#202226]",
 };
 
 export function ButtonLink({

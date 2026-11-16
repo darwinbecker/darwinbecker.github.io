@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: light;
-  --background: #faf9f6;
-  --surface: #ffffff;
-  --foreground: #191a1b;
-  --muted: #66686b;
-  --border: #e7e5e1;
-  --accent: #315f8c;
-  --accent-hover: #264b70;
+  color-scheme: dark;
+  --background: #151719;
+  --surface: #1c1f22;
+  --foreground: #f1f0ed;
+  --muted: #a1a3a7;
+  --border: #303438;
+  --accent: #a3c9b0;
+  --accent-hover: #b8d8c3;
   --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --content-width: 76rem;
   --page-gutter: clamp(1.25rem, 5vw, 4rem);
@@ -49,8 +49,8 @@ body {
 }
 
 ::selection {
-  background: #d9e6f1;
-  color: var(--foreground);
+  background: #344d3d;
+  color: #f4faf6;
 }
 
 :focus-visible {
