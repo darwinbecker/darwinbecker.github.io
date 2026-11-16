@@ -27,76 +27,18 @@ The website must be free to host through GitHub Pages.
 
 ## 3. Website Structure
 
-### Homepage (/)
-
-Purpose: Introduce Darwin and highlight the most important information.
-
-Sections:
-- Hero / introduction.
-- Short professional introduction.
-- Selected projects.
-- Technical skills.
-- Professional experience overview.
-- Contact / call to action.
-
-### About (/about/)
-
-Purpose: Present professional background.
+The portfolio is a single-page site at `/`, with header links that scroll to
+sections on the homepage.
 
 Sections:
-- Personal introduction.
-- Professional background.
-- Development philosophy.
-- Technical interests.
-- Career experience.
+- Profile and professional introduction (`#about`).
+- Selected projects with logos, summaries, key features, development work,
+  technologies, live demos, and source links (`#projects`).
+- Contact information with the confirmed GitHub profile (`#contact`).
 
-### Projects (/projects/)
-
-Purpose: Showcase all portfolio projects.
-
-Features:
-- Project overview.
-- Project previews.
-- Technology tags.
-- Links to source code and live demos.
-- Links to individual project pages.
-
-### Individual Project Pages
-
-Initial projects:
-
-1. Wordle
-   GitHub: https://github.com/darwinbecker/wordle
-
-2. Blackjack
-   GitHub: https://github.com/darwinbecker/blackjack
-
-3. KnowledgeHub
-   A personal knowledge management and document Q&A application.
-   Repository and implementation details to be confirmed.
-
-Each project page should include:
-- Project introduction.
-- Problem or motivation.
-- Features.
-- Technologies.
-- Technical implementation.
-- Design decisions.
-- Screenshots or visual previews.
-- Source code link.
-- Live demo link, if available.
-
-Do not invent missing information.
-
-### Contact (/contact/)
-
-Purpose: Make it easy for recruiters and potential employers to get in touch.
-
-Include:
-- Professional email (to be confirmed).
-- GitHub profile.
-- LinkedIn profile (to be confirmed).
-- CV download (to be provided).
+Keep project information in `src/data/projects.ts`. Add project content only
+when its features and implementation details are verified. Do not invent
+missing information.
 
 ## 4. Content Management
 
