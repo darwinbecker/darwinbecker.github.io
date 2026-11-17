@@ -24,7 +24,7 @@ export default function HomePage() {
     <main className='flex-1'>
       <section
         aria-labelledby='intro-title'
-        className='scroll-mt-8 py-24 sm:py-36'
+        className='py-24 sm:py-36'
         id='about'
       >
         <Container className='grid items-center gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(20rem,0.85fr)] lg:gap-12'>
