@@ -12,6 +12,7 @@ import {
   IconUser,
   IconX,
 } from "@tabler/icons-react"
+import Image from "next/image"
 
 const navigationItems = [
   { label: "About", href: "#about", icon: IconUser },
@@ -29,9 +30,17 @@ export function SiteHeader() {
       <Container className='flex min-h-20 flex-wrap items-center justify-between gap-x-8 gap-y-3 py-4'>
         <Link
           aria-label='Darwin Becker, home'
-          className='rounded-sm text-xl font-semibold tracking-[-0.03em]'
+          className='rounded-sm text-xl font-semibold tracking-[-0.03em] flex items-center gap-2'
           href='/'
         >
+          <Image
+            alt='Darwin Becker Logo'
+            className='h-8 w-auto sm:h-9'
+            height={36}
+            priority
+            src='/icon.svg'
+            width={36}
+          />
           Darwin Becker
         </Link>
 
