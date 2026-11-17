@@ -2,12 +2,16 @@ import Link from "next/link"
 import { Container } from "@/components/container"
 import {
   IconAddressBook,
+  IconBriefcase,
+  IconCode,
   IconDeviceGamepad2,
   IconUser,
 } from "@tabler/icons-react"
 
 const navigationItems = [
   { label: "About", href: "#about", icon: IconUser },
+  { label: "Experience", href: "#experience", icon: IconBriefcase },
+  { label: "Skills", href: "#skills", icon: IconCode },
   { label: "Projects", href: "#projects", icon: IconDeviceGamepad2 },
   { label: "Contact", href: "#contact", icon: IconAddressBook },
 ]
@@ -24,7 +28,7 @@ export function SiteHeader() {
           Darwin Becker
         </Link>
         <nav aria-label='Main navigation'>
-          <ul className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted sm:gap-x-8'>
+          <ul className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted'>
             {navigationItems.map((item) => (
               <li key={item.href}>
                 <a

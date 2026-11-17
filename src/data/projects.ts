@@ -20,7 +20,7 @@ export const projects: Project[] = [
   {
     slug: 'wordle',
     title: 'Wordle',
-    description: 'A German-language version of the Wordle browser game.',
+    description: 'A German-language version of Wordle',
     summary:
       'Guess a five-letter word in six attempts, using the feedback from each guess to narrow down the answer.',
     logo: '/projects/wordle-logo-small.png',
@@ -47,7 +47,7 @@ export const projects: Project[] = [
   {
     slug: 'blackjack',
     title: 'Blackjack',
-    description: 'A browser-based Blackjack game.',
+    description: 'A browser-based Blackjack game',
     summary:
       'Play against the dealer with the two basic actions, Hit and Stand. The project uses custom playing cards and Pinia for centralized game state.',
     logo: '/projects/blackjack-logo.png',
