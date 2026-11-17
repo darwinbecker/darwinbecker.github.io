@@ -15,7 +15,6 @@ import {
   IconBriefcase,
   IconCode,
   IconDeviceGamepad2,
-  IconMouse,
   IconUser,
 } from "@tabler/icons-react"
 
