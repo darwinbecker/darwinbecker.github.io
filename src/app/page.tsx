@@ -29,6 +29,33 @@ export default function HomePage() {
         <Container className='grid items-center gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(20rem,0.85fr)] lg:gap-12'>
           <Reveal className='max-w-4xl'>
             <div>
+              <nav
+                aria-label='Social profiles'
+                className='mb-2 flex items-center gap-1'
+              >
+                <a
+                  aria-label='GitHub (opens in a new tab)'
+                  className='inline-flex size-9 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface hover:text-foreground'
+                  href='https://github.com/darwinbecker'
+                  rel='noreferrer'
+                  target='_blank'
+                >
+                  <IconBrandGithub aria-hidden='true' size={18} stroke={1.7} />
+                </a>
+                <a
+                  aria-label='LinkedIn (opens in a new tab)'
+                  className='inline-flex size-9 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface hover:text-foreground'
+                  href='https://www.linkedin.com/in/darwin-becker-43515a19a/'
+                  rel='noreferrer'
+                  target='_blank'
+                >
+                  <IconBrandLinkedin
+                    aria-hidden='true'
+                    size={18}
+                    stroke={1.7}
+                  />
+                </a>
+              </nav>
               <p className='mb-6 text-sm font-medium tracking-[0.12em] text-accent uppercase'>
                 Darwin Becker <span className='px-2 text-border'>/</span>{" "}
                 Software developer
@@ -48,7 +75,7 @@ export default function HomePage() {
                 teams and startups. Areas of focus include interface usability,
                 code quality and performance.
               </p>
-              <div className='mt-10 flex flex-wrap gap-3'>
+              <div className='mt-8 flex flex-wrap gap-3'>
                 <a
                   className='inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-colors bg-accent text-[#131915] hover:bg-accent-hover focus-visible:outline-offset-4'
                   href='#experience'
@@ -158,7 +185,7 @@ export default function HomePage() {
             <SectionHeading
               id='projects-title'
               eyebrow='Selected work'
-              title='Selected projects'
+              title='Projects'
               description='Browser games, including their key features, development work and technologies.'
               icon={
                 <IconDeviceGamepad2 aria-hidden='true' size={64} stroke={1.7} />
