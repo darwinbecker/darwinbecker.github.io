@@ -12,6 +12,7 @@ import {
   IconArrowDown,
   IconBrandGithub,
   IconBrandLinkedin,
+  IconBrandXing,
   IconBriefcase,
   IconCode,
   IconDeviceGamepad2,
@@ -54,6 +55,15 @@ export default function HomePage() {
                     size={18}
                     stroke={1.7}
                   />
+                </a>
+                <a
+                  aria-label='Xing (opens in a new tab)'
+                  className='inline-flex size-9 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface hover:text-foreground'
+                  href='https://www.xing.com/profile/Darwin_Becker'
+                  rel='noreferrer'
+                  target='_blank'
+                >
+                  <IconBrandXing aria-hidden='true' size={18} stroke={1.7} />
                 </a>
               </nav>
               <p className='mb-6 text-sm font-medium tracking-[0.12em] text-accent uppercase'>
@@ -237,18 +247,10 @@ export default function HomePage() {
                 Contact
               </h2>
               <p className='mt-4 max-w-xl leading-7 text-muted'>
-                Find me on GitHub or LinkedIn.
+                Find me on GitHub, LinkedIn or Xing.
               </p>
             </div>
             <div className='flex flex-wrap gap-3'>
-              <ButtonLink
-                href='https://www.linkedin.com/in/darwin-becker-43515a19a/'
-                rel='noreferrer'
-                target='_blank'
-              >
-                <IconBrandLinkedin className='h-4 w-4' />
-                LinkedIn
-              </ButtonLink>
               <ButtonLink
                 href='https://github.com/darwinbecker'
                 rel='noreferrer'
@@ -257,6 +259,24 @@ export default function HomePage() {
               >
                 <IconBrandGithub className='h-4 w-4' />
                 GitHub
+              </ButtonLink>
+              <ButtonLink
+                href='https://www.linkedin.com/in/darwin-becker-43515a19a/'
+                rel='noreferrer'
+                target='_blank'
+                variant='secondary'
+              >
+                <IconBrandLinkedin className='h-4 w-4' />
+                LinkedIn
+              </ButtonLink>
+              <ButtonLink
+                href='https://www.xing.com/profile/Darwin_Becker'
+                rel='noreferrer'
+                target='_blank'
+                variant='secondary'
+              >
+                <IconBrandXing className='h-4 w-4' />
+                Xing
               </ButtonLink>
             </div>
           </Reveal>
